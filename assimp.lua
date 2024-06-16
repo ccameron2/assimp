@@ -53,6 +53,9 @@ project "assimp"
         "contrib/utf8cpp/source",
     }
 
+    links{
+        "zlib"
+    }
     filter "system:windows"
         cppdialect "C++20"
         systemversion "latest"
